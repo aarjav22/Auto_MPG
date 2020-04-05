@@ -1,6 +1,6 @@
 # Auto-MPG LinearRegression Model
 
-## Regression model to predicting the miles per gallon of a car
+## Regression model to predict the Miles Per Gallon of a car
 
 &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -21,7 +21,7 @@
 
 ## 1.	Introduction
 
-In this project, I build Regression model to study the relationship between miles per gallon and different continous and discrete variables. I implemented this regression model in Python programming language using Scikit-learn,numpy,seaborn,matplotlib. 
+In this project, I build Regression model to study the relationship between miles per gallon of a car and different continous and discrete variables. I implemented this regression model in Python programming language using Scikit-learn,numpy,seaborn,matplotlib. 
 
 &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -130,18 +130,24 @@ It help me in finding the good attributes and bad attributes for training my mod
 
 ## 9.	Interpretation and Conclusion
 
-Linear Regression:
+Simple Linear Regression:
 	
-     RMSE value: 8.992149546402015
+     RMSE value: 15.597077922801555
      
-     R2 value : 0.8462011302443643
+     R2 value : 0.7332325331513996
 
+Multiple Linear Regression
+
+     RMSE value: 11.689963364262722
+     
+     R2 value : 0.8170638660159202
+	
 Polynomial Regression: 
 
-     RMSE value: 10.307912833157452
+     RMSE value: 9.355445178772353
      
-     R2 value : 0.8236967329003593
+     R2 value : 0.8399874371382401
 
-By looking towards the distribution plot of test data the polynomial model shows phenomenal result but RMSE and R2 value of linear model have a slight edge over polynomial model. 
+We can conclude that polynomial regression model fits the data in most perfect manner as compaired to simple ,multiple linear regression model as we can see from mean Squared error and R2 value of all three models
 
 &nbsp; &nbsp; &nbsp; &nbsp;
