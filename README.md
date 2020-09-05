@@ -1,4 +1,4 @@
-# Auto-MPG LinearRegression Model
+# Auto-MPG
 
 ## Regression model to predict the Miles Per Gallon of a car
 
@@ -21,7 +21,7 @@
 
 ## 1.	Introduction
 
-In this project, I build Regression model to study the relationship between miles per gallon of a car and different continous and discrete variables. I implemented this regression model in Python programming language using Scikit-learn,numpy,seaborn,matplotlib. 
+In this notebook, I build Regression model to study the relationship between miles per gallon of a car with different continous and discrete attributes. I implemented this regression model in Python programming language using Scikit-learn,numpy,seaborn,matplotlib and model accuracy is based on cross validation result.
 
 &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -41,8 +41,7 @@ In this project, I build Regression model to study the relationship between mile
 
 ## 3.	The problem statement
 
-The main aim of this model is to predicting the miles per gallon of a car using some continous and discrete variable data. Finding relationship or dependency of MPG on attrubutes like weight , Number of Cylinders and many more. 
-The accuracy of the model is defined by RMS value and R2 Score.To improve the accuracy of the model I tried to Polynomial fit the data into the model.
+The main aim of this model is to predicting the miles per gallon of a car using some continous and discrete variable data. Finding relationship or dependency of MPG on attrubutes like weight , Number of Cylinders and many more. The accuracy of the model is defined by mean squared error value and cross validation Score. The notebook contain the linear and polynomial regression model for data.
 
 &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -123,31 +122,28 @@ where
 
 ## 8.	Exploratory data analysis
 
-To summarize the main characteristics of data I analysed it using Data Visualization by ploting graphs like regression plot ,box plot ,histogrames, and distribution plot between the dependent and various independent variables.
-It help me in finding the good attributes and bad attributes for training my model as graph clearly shows us the reationship between the variables. 	 
+To summarize the main characteristics of data and finding the patterns I use plots to analysed it using Data Visualization by ploting graphs of univariate, bivariate to find the distribution of particulat attribute and the relationship between the dependent and independent attribute by using plots like regression plot ,box plot ,histogrames, and distribution plot.It help me in finding the good attributes and bad attributes for training my model as graph clearly shows us the reationship between the variables. 
 
 &nbsp; &nbsp; &nbsp; &nbsp;
 
 ## 9.	Interpretation and Conclusion
 
-Simple Linear Regression:
+Linear Regression:
 	
-     RMSE value: 15.597077922801555
+     MSE value: 0.1764742397827893
      
-     R2 value : 0.7332325331513996
-
-Multiple Linear Regression
-
-     RMSE value: 11.689963364262722
+     Accuracy Score : 0.8313833993698124
      
-     R2 value : 0.8170638660159202
-	
+     cross validation score: 0.5906438717928257
+
 Polynomial Regression: 
 
-     RMSE value: 9.355445178772353
+     MSE value: 6.887827289424193
      
-     R2 value : 0.8399874371382401
+     Accuracy Score : 0.8317803894705068
 
-We can conclude that polynomial regression model fits the data in most perfect manner as compaired to simple ,multiple linear regression model as we can see from mean Squared error and R2 value of all three models
+     cross Validation score: 0.4403178468015085
+     
+After looking at the scores like accuracy score ,mean squared error and cross validation score we can conclude that polynomial regression has a little edge on accuracy score but cross validation score and mean squared score of linear regression are much better then that of polynomial regression so we conclude that linear regression fit the data much better as compair to polynomial regression. 
 
 &nbsp; &nbsp; &nbsp; &nbsp;
